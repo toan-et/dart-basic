@@ -37,12 +37,12 @@ void main() {
   
 **Requirements** : 
 -  Define **Move()**, force re-use setXY() [1 marks]
--  Calculate distance between twwo points [3 marks]
+-  Calculate distance between two points [3 marks]
 -  Define **Plus()** with usage as [1 mark]
  ```dart
  Point p3 = Point.plus(p1, p2);
  ```
- -  Define **+** operator with usage as [3 marks]
+ -  Define **(+)** operator with usage as [3 marks]
  ```dart
  Point p3 = p1 + p2;
  ``` 
