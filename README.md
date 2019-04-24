@@ -48,7 +48,7 @@ void main() {
  ``` 
 - Pretty code [2 marks]
   - Use arrow function
-  - Show() has one optional parameter note named option parameter
+  - Show() has one optional parameter not named option parameter
   - ...
 
   
