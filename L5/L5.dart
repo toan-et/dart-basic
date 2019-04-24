@@ -14,4 +14,14 @@ void main() {
 
   // Calculate distance of p1 & p2
   print('distance: ${Point.calcDistance(p1, p2)}');
+
+  // Plus two p1 & p2
+  print('====== Plus by fucntion ======');
+  Point p3 = Point.plus(p1, p2);
+  p3.show('Point 3:');
+
+  // Plus
+  print('====== Plus by operator ======');
+  p3 = p2 + p3;
+  p3.show();
 }
