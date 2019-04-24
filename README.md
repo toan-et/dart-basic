@@ -2,7 +2,7 @@
 
 # Lesson 5
 * Result on screen as : http://prntscr.com/ng2tt4
-* Use code in L5 folder and follow requiement
+* Use code in L5 folder and follow requirement
 
 **Requirements** : 
 -  Define **Show()** has one optional positional parameter not optional named parameter [1 mark]
