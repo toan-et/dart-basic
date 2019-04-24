@@ -31,12 +31,12 @@ void main() {
   p3.show();
 }
  ```
-* Create L5.dart contains void main function, import Point class
-* Create Point.dart, define Point Class has two private int x,y and some functions...
 * Result on screen as : http://prntscr.com/ng2tt4
-  
+* Use code in L5 folder and follow requiement
+
 **Requirements** : 
--  Define **Move()**, force re-use setXY() [1 marks]
+-  Define **Show()** has one optional positional parameter not optional named parameter [1 mark]
+-  Define **Move()**, force re-use setXY() [1 mark]
 -  Calculate distance between two points [3 marks]
 -  Define **Plus()** with usage as [1 mark]
  ```dart
@@ -46,9 +46,8 @@ void main() {
  ```dart
  Point p3 = p1 + p2;
  ``` 
-- Pretty code [2 marks]
+- Pretty code [1 marks]
   - Use arrow function
-  - Show() has one optional parameter not named option parameter
   - ...
 
   
