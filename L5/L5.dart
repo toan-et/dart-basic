@@ -1,15 +1,17 @@
 import 'Point.dart';
-import 'dart:math' as math;
 
-void main(List<String> args) {
-  var p1 = Point(), p2 = Point(x: 5, y: 5);
+void main() {
+  // Init two points
+  var p1 = Point(), p2 = Point(x: 6, y: 4);
+  p1.show('Point 1');
+  p2.show('Point 2');
+
+  // Move p1 to (2,1)
+  print('====== Move p1 ======');
+  p1.setXY(x: 2, y: 1);
+  p1.move(Point(x: 2, y: 1));
   p1.show();
-  p2.show();
-  print('distance: ${distance(p1, p2)}');
-}
 
-double distance(Point p1, Point p2) {
-  double d = math.sqrt(math.pow((p2.getX() - p1.getX()), 2) +
-      math.pow((p2.getY() - p1.getY()), 2));
-  return d;
+  // Calculate distance of p1 & p2
+  print('distance: ${Point.calcDistance(p1, p2)}');
 }
