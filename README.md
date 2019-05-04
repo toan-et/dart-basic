@@ -64,3 +64,33 @@ Console screen :
     + Contructor have to call the supper contructor method of Avenger class [2 marks]
     + doSkill() fore override method from Avenger class [0.5 mark]
     + Print a funny/pretty unicode text related the avenger in doSkill() [1 mark]
+      - Example Thanos's flick Off =)) @@
+```dart
+                        ▗▄▗▖▄▄                              
+                       ▐▚ ▘▝▝▄▚                             
+                       ▌▙    ▞▗                             
+                       ▚▚▄▗▗▄▀▗                             
+                       ▌      ▗                             
+                       ▞      ▝                             
+                       ▚ ▘▘▚  ▝                             
+                       ▌      ▐                             
+                       ▞      ▗                             
+                       ▚      ▝                             
+                      ▗▌      ▐▘▘▗                          
+                    ▗▞▘▌      ▐   ▝▚▄▗▗                     
+                ▗▖▀██▀▀▛ ▐▞▝ ▚▐▄▄▄▄▄▟▀▀▀▚                   
+                ▞ ▝    ▌   ▀▘▘▐    ▄▖▙ ▄▚                   
+               ▗▌      ▙▝     ▐  ▘   ▐▘▐▄█▄                 
+               ▟▖      ▌      ▐      ▐   ▝█▖                
+              ▟▜▖      ▌      ▐      ▐▘    ▚                
+             ▗▌▐▖      ▛      ▐      ▟▘    ▐▖               
+             ▟ ▐▖     ▐▌      ▐▖     █▖     ▌               
+             ▛ ▐▘     ▝▘      ▝▛     ▜      ▚               
+             ▜ ▐▌                           ▟               
+             ▐▖█▌                           ▐               
+              ▌▘▜                           ▐               
+              ▀▖                  ▗     ▗  ▞▘               
+               ▝ ▌▖▐   ▄▄▄ ▚   ▄▄▗ ▖▄▄▄▄▙▝▘                 
+                  ▝ ▘▘▘  ▝▚▘▌▘▀  ▀▀         
+
+```
