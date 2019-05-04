@@ -29,14 +29,21 @@ Thanos tn = Thanos(
     sexual:'Male',
     gadget:Gadget('Găng tay vô cực 6 đá')
 );
+```
+Console screen :
+ ```dart
 // Name: Thanos / Củ khoai tím
 // Sexual: Male
 // Bảo bối: Găng tay vô cực 6 đá
+```
+ ```dart
 Thanos tnChild = Thanos(
     name:'Thanos Con',
     sexual:'Bê đê',
 );
-=> console 
+```
+Console screen :
+ ```dart
 // Name: Thanos Con
 // Sexual: Bê đê
 // Bảo bối: Chưa đủ đẳng cấp để sử dụng bảo bối
@@ -44,8 +51,8 @@ Thanos tnChild = Thanos(
 * Create files in L6 folder and do following requirements
 
 **Requirements** : 
--  Define **Avenger abtract class** has one optional positional parameter not optional named parameter [4 marks]
-    + Have contructor method with three named optional parameters, each parameter has default value [3 marks]
+-  Define **Avenger abtract class** [5 marks]
+    + Have contructor method with three named optional parameters, each parameter has default value [4 marks]
     + doSkill() is a abtract method (extended class will override it) [0.5 mark]
     + showInfo() [0.5 mark]
 -  Define **Gadget class** [1 mark]
