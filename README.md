@@ -22,6 +22,25 @@
 
 # Lesson 6
 * Structure of L6 lesson, L6.dart and result screen : http://prntscr.com/nk6pv7
+* Have two new instance optional class 
+ ```dart
+Thanos tn = Thanos(
+    name:'Thanos / Củ khoai tím',
+    sexual:'Male',
+    gadget:Gadget('Găng tay vô cực 6 đá')
+);
+// Name: Thanos / Củ khoai tím
+// Sexual: Male
+// Bảo bối: Găng tay vô cực 6 đá
+Thanos tnChild = Thanos(
+    name:'Thanos Con',
+    sexual:'Bê đê',
+);
+=> console 
+// Name: Thanos Con
+// Sexual: Bê đê
+// Bảo bối: Chưa đủ đẳng cấp để sử dụng bảo bối
+ ``` 
 * Create files in L6 folder and do following requirements
 
 **Requirements** : 
@@ -34,19 +53,8 @@
     + Have contructor method with one position optional parameter
     + Have a public method getName()
 -  Define any avenger actor you like(Captain Marvel, Captain American, IronMan, Hulk, Spider Man, Deadpool ...)
-    + Class definition force extend from Avenger *abtract* class [1 mark]
-    + Contructor have to call the supper contructor method of Avenger class [3 marks]
-    + doSkill() fore override method from Avenger class [1 mark]
+    + Class definition force extend from Avenger *abtract* class [0.5 mark]
+    + Contructor have to call the supper contructor method of Avenger class [2 marks]
+    + doSkill() fore override method from Avenger class [0.5 mark]
     + Print Unicode text funny/pretty related the avenger in doSkill() [1 mark]
--  Define **Plus()** with usage as [1 mark]
- ```dart
- Point p3 = Point.plus(p1, p2);
- ```
- -  Define **(+)** operator with usage as [3 marks]
- ```dart
- Point p3 = p1 + p2;
- ``` 
-- Pretty code [1 marks]
-  - Use arrow function
-  - ...
   
