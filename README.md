@@ -33,17 +33,23 @@ Console screen :
  ``` 
 **Detail Requirements** : 
 -  Define **Avenger abtract class** [5 marks]
+    + Have three private properties : 
+        ```dart 
+        String name 
+        String sexual 
+        Gadget gadget
+        ```
     + Have contructor method with three named optional parameters, each parameter has default value [4 marks]
     + doSkill() is a abtract method (extended class will override it) [0.5 mark]
     + showInfo() [0.5 mark]
 -  Define **Gadget class** [1 mark]
-    + Have a private property _name
-    + Have contructor method with one position optional parameter
+    + Have a private property "name"
+    + Have a contructor method with one position optional parameter
     + Have a public method getName()
--  Define any avenger actor you like(Captain Marvel, Captain American, IronMan, Hulk, Spider Man, Deadpool ...)
-    + Class definition force extend from Avenger *abtract* class [0.5 mark]
-    + Contructor have to call the supper contructor method of Avenger class [2 marks]
-    + doSkill() fore override method from Avenger class [0.5 mark]
+-  Define one in list figure: https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films (*each member have to define specific figure*)
+    + Class definition, force extend from Avenger *abtract* class [0.5 mark]
+    + Contructor method, force call the supper contructor method of Avenger class [2 marks]
+    + doSkill method, force override from Avenger class [0.5 mark]
     + Print a funny/pretty unicode text related the avenger in doSkill() [1 mark]
       - Example Thanos's flick Off =)) @@
 ```dart
