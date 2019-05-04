@@ -22,7 +22,8 @@
 
 # Lesson 6
 * Structure of L6 lesson, L6.dart and result screen : http://prntscr.com/nk6pv7
-* Have two new instance optional class 
+* Create files in L6 folder and do following requirements
+**Main Requirements** : 
  ```dart
 Thanos tn = Thanos(
     name:'Thanos / Củ khoai tím',
@@ -48,9 +49,7 @@ Console screen :
 // Sexual: Bê đê
 // Bảo bối: Chưa đủ đẳng cấp để sử dụng bảo bối
  ``` 
-* Create files in L6 folder and do following requirements
-
-**Requirements** : 
+**Detail Requirements** : 
 -  Define **Avenger abtract class** [5 marks]
     + Have contructor method with three named optional parameters, each parameter has default value [4 marks]
     + doSkill() is a abtract method (extended class will override it) [0.5 mark]
@@ -64,4 +63,3 @@ Console screen :
     + Contructor have to call the supper contructor method of Avenger class [2 marks]
     + doSkill() fore override method from Avenger class [0.5 mark]
     + Print Unicode text funny/pretty related the avenger in doSkill() [1 mark]
-  
