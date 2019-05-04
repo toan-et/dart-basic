@@ -46,7 +46,7 @@ Console screen :
     + Have a private property "name"
     + Have a contructor method with one position optional parameter
     + Have a public method getName()
--  Define one in list figure: https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films (*each member have to define specific figure*)
+-  Define one in list figure: https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films (*each member have to define separate figure*)
     + Class definition, force extend from Avenger *abtract* class [0.5 mark]
     + Contructor method, force call the supper contructor method of Avenger class [2 marks]
     + doSkill method, force override from Avenger class [0.5 mark]
