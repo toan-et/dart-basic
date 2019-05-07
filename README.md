@@ -3,7 +3,7 @@
 # Lesson 6 - Avengers: Endgame
 * Structure of L6 lesson, L6.dart and result screen : http://prntscr.com/nk6pv7
 * Create files in L6 folder and do following requirements
-* Deadline: Tuesday 7th May 2019
+* Deadline: Tuesday 9th May 2019
 
 **Main Requirements** : 
  ```dart
@@ -12,6 +12,7 @@ Thanos tn = Thanos(
     sexual:'Male',
     gadget:Gadget('Găng tay vô cực 6 đá')
 );
+tn.showInfo();
 ```
 Console screen :
  ```dart
@@ -24,6 +25,7 @@ Thanos tnChild = Thanos(
     name:'Thanos Con',
     sexual:'Bê đê',
 );
+tnChild.showInfo();
 ```
 Console screen :
  ```dart
@@ -39,47 +41,109 @@ Console screen :
         String sexual 
         Gadget gadget
         ```
-    + Have contructor method with three named optional parameters, each parameter has default value [4 marks]
+    + Have constructor method with three named optional parameters, each parameter has default value [4 marks]
     + doSkill() is a abtract method (extended class will override it) [0.5 mark]
     + showInfo() [0.5 mark]
 -  Define **Gadget class** [1 mark]
     + Have a private property "name"
-    + Have a contructor method with one position optional parameter
+    + Have a constructor method with one position optional parameter
     + Have a public method getName()
--  Define one in list figure: https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films (*each member have to define separate figure*)
+-  Define one in list figures: https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_films (*each member have to define separate figure*)
     + Class definition, force extend from Avenger *abtract* class [0.5 mark]
-    + Contructor method, force call the supper contructor method of Avenger class [2 marks]
+    + Constructor method, force call the supper constructor method of Avenger class [2 marks]
     + doSkill method, force override from Avenger class [0.5 mark]
     + Print a funny/pretty unicode text related the avenger in doSkill() [1 mark]
       - Example Thanos's flick Off =)) @@
 ```dart
-                        ▗▄▗▖▄▄                              
-                       ▐▚ ▘▝▝▄▚                             
-                       ▌▙    ▞▗                             
-                       ▚▚▄▗▗▄▀▗                             
-                       ▌      ▗                             
-                       ▞      ▝                             
-                       ▚ ▘▘▚  ▝                             
-                       ▌      ▐                             
-                       ▞      ▗                             
-                       ▚      ▝                             
-                      ▗▌      ▐▘▘▗                          
-                    ▗▞▘▌      ▐   ▝▚▄▗▗                     
-                ▗▖▀██▀▀▛ ▐▞▝ ▚▐▄▄▄▄▄▟▀▀▀▚                   
-                ▞ ▝    ▌   ▀▘▘▐    ▄▖▙ ▄▚                   
-               ▗▌      ▙▝     ▐  ▘   ▐▘▐▄█▄                 
-               ▟▖      ▌      ▐      ▐   ▝█▖                
-              ▟▜▖      ▌      ▐      ▐▘    ▚                
-             ▗▌▐▖      ▛      ▐      ▟▘    ▐▖               
-             ▟ ▐▖     ▐▌      ▐▖     █▖     ▌               
-             ▛ ▐▘     ▝▘      ▝▛     ▜      ▚               
-             ▜ ▐▌                           ▟               
-             ▐▖█▌                           ▐               
-              ▌▘▜                           ▐               
-              ▀▖                  ▗     ▗  ▞▘               
-               ▝ ▌▖▐   ▄▄▄ ▚   ▄▄▗ ▖▄▄▄▄▙▝▘                 
-                  ▝ ▘▘▘  ▝▚▘▌▘▀  ▀▀         
-
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                     #             @                                      
+                                     ;            .:                                      
+                                      #           @                                       
+                                                  ,                                       
+                                                 `                                        
+                                                 @                                        
+                                                +                                         
+                                                @                                         
+                                                                                          
+                                                                                          
+                           @,             :,                                              
+                            .@@         :,  ##;'          :@@`                            
+                                #@:     +  ;`, .:         `                               
+                                  `;    ,  @ @  :.                ` :@@;                  
+                                        `  ,  #  +                ,@    '`                
+                                       ``  ,   @:@@              ;,     ,                 
+                                       `   +       @            `,      @                 
+                                       `.  @        @           @      ..                 
+                                       ``  `;        @         ;       @                  
+                                       ,    ;.        @        @      ,                   
+                                       +     @`        ;       .      @                   
+                                       @      ;;       +      @      '                    
+                                      ;        +.       @    @       '                    
+                              ;@      @        ,@       ;   ;       @                     
+                            .@`      ``       ``..       @  +       :                     
+                                     #        ;  @       `;'       @                      
+                                     '        @`  @       .@       :                      
+                                    :        `.    :       .:     @                       
+                                    @        #     @        ;     +                       
+                                   +         #      @`       @   ;                        
+                                  .,        ``      ;@+      :   @                        
+                                 `#         @       @        .  ,`                        
+                                `@          '      .`        .  @                         
+                                @       `:@@@;,,;#@@@@@+     , `.                         
+                              `@      ;@.               +`   + @                          
+                             ,+  .'@@,                   #   @`,                          
+                            .: .#`  .       ,,.`         @   @@                           
+                           `+  @@   @    `@,   `'@;      .`  :;                           
+                           @   ,@@@,   .@.`     `  :@     , .+                            
+                          @    '    `;#`             @    @ #@                            
+                         ;`    @  @:` .               @   @ @:                            
+                         +      @+:`+@                ;   ' +                             
+                        @        @,`        `@        ;   ' #                             
+                        :         @       .@: .       @   ' @                             
+                       ,           @;``.#@    #       @   ; #                             
+                       @              +@      '       @   : @                             
+                       @            .@         @      ;   . @                             
+                       '           @.          :      ``  ``@                             
+                       ,          @           '        +   :#                             
+                       `         @            +        @   @,                             
+                      .         @             .`        :  @ .                            
+                      :        @               @        @    +                            
+                      @       +                         ,    @                            
+                      @       ;                          :   ;                            
+                     `.      +                           '  @                             
+                     @       @                           @ @`                             
+                    ..      `.                           + '                              
+                    #       ,                            ,#                               
+                   @                                    @@                                
+                  @                                   .@`                                 
+                 @                                  @'`                                   
+                @                               ` @,                                      
+              `@                                #;                                        
+             ,+             ;                 '+                                          
+            +,              .,              `@                                            
+           @                 ::            @.                                             
+          @                   `@`        @;                                               
+        :;                      .'@@''@@,                                                 
+       @                         @                                                        
+       @                       `@                                                         
+       :                       @                                                          
+        @                     @                                                           
+        `#                   @`                                                           
+         .'                 +`                                                            
+          `#               ,.                                                             
+            @             ,,                                                              
+             @,          .;                                                               
+              .@`        +                                                                
+                :@      @                                                                 
+                  ,@:` @`                                                                 
+                     `,                                                                   
+                                                                                          
+                                                          
 ```
 
 # Lesson 5
