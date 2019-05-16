@@ -1,20 +1,20 @@
-class Avenger {
+import 'Gadget.dart';
+abstract class Avenger {
   String _name;
-  Avenger({String name = "Avenger"}) {
+  String _sexual;
+  Gadget _gadget;
+  Avenger({String name = "Avenger", String sexual = "Unkown", Gadget gadget = null}) {
     this._name = name;
+    this._sexual = sexual;
+    if(gadget == null) 
+      gadget = Gadget();
+    this._gadget = gadget;
+    print('Avenger');
   }
   void showInfo() {
-    
+    print('Name: $_name');
+    print('Sexual: $_sexual');
+    print('Bảo bối: ${_gadget.getName()}');
   }
-  String getInfo() => "I'm: " + _name;
-}
-
-class IronMan extends Avenger {
- 
-}
-void main() {
-  Avenger av = new Avenger();
-  av.showInfo();
-  IronMan irMan = new IronMan(name:'Iron Main');
-  irMan.showInfo();
+  void doSkill();
 }
