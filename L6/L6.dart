@@ -1,3 +1,4 @@
+import 'CaptainAmerica.dart';
 import 'Thanos.dart';
 import 'Gadget.dart';
 // import 'Avenger.dart';
@@ -14,14 +15,14 @@ void main(){
   tn.doSkill();
   
   // Thanos con chưa có găng tay vô cực
-  // Thanos tnChild = Thanos(
-  //   name:'Thanos Con',
-  //   sexual:'Bê đê',
-  // );
-  // // hiện thông tin cơ bản
-  // tnChild.showInfo();
-  // // ra tuyệt chiêu
-  // tnChild.doSkill();
+  Thanos tnChild = Thanos(
+    name:'Thanos Con',
+    sexual:'Bê đê',
+  );
+  // hiện thông tin cơ bản
+  tnChild.showInfo();
+  // ra tuyệt chiêu
+  tnChild.doSkill();
 
-  // Avenger av = Avenger();
+  CaptainAmerica().doSkill();
 }

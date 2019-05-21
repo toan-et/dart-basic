@@ -9,7 +9,6 @@ abstract class Avenger {
     if(gadget == null) 
       gadget = Gadget();
     this._gadget = gadget;
-    print('Avenger');
   }
   void showInfo() {
     print('Name: $_name');

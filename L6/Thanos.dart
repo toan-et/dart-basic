@@ -5,7 +5,6 @@ class Thanos extends Avenger {
   // Thanos({String name = "...", String sexual = '...', Gadget gadget = null});
   Thanos({String name = "...", String sexual = '...', Gadget gadget = null})
       : super(name: name, sexual: sexual, gadget: gadget){
-        print('Thanos');
       }
   @override
   void doSkill() {
