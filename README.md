@@ -1,5 +1,41 @@
 ﻿﻿# dart-basic
 
+# Lesson 7 - dynamic vs var key word
+* L7.dart and result screen : http://prntscr.com/nrhrg7
+* Create files in L7 folder and do following requirements
+* Deadline: 4:00 PM Friday 22th May 2019
+
+**Main Requirements** : 
+
+Follow this code and fill missing place as requirements
+* Fill keyword **dynamic** & **var** at "..." place
+* List 20 random Avenger in List
+ ```dart
+import '../L6/CaptainAmerica.dart';
+import '../L6/Thanos.dart';
+import '../L6/Hulk.dart';
+import '../L6/Spiderman.dart';
+import 'dart:math';
+List<...> avengers = [<list to avengers here>];
+String checkAvenger(... avenger){
+  // get class name of a avenger here such as Thanos, Spiderman, Hulk...
+  return '<a avenger>'
+}
+... getAvenger(){
+  // get random avenger here
+  return '<a random avenger>'
+}
+void main(){
+  // list random avengers here
+  for(... i = 0; i<20; i++)
+    print('');
+}
+```
+console screen :
+ ```dart
+a list random avengers, refer here http://prntscr.com/nrhrg7
+```
+
 # Lesson 6 - Avengers: Endgame
 * Structure of L6 lesson, L6.dart and result screen : http://prntscr.com/nk6pv7
 * Create files in L6 folder and do following requirements
