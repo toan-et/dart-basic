@@ -1,7 +1,7 @@
 ﻿﻿# dart-basic
 
 # Lesson 7 - dynamic vs var keyword
-* Deadline: 4:00 PM Friday 22th May 2019
+* Deadline: 5:00 PM Wednesday 22th May 2019
 
 **Main Requirements** : 
 
