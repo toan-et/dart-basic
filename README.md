@@ -1,21 +1,22 @@
 ﻿﻿# dart-basic
 
-# Lesson 7 - dynamic vs var key word
-* L7.dart and result screen : http://prntscr.com/nrhrg7
-* Create files in L7 folder and do following requirements
+# Lesson 7 - dynamic vs var keyword
 * Deadline: 4:00 PM Friday 22th May 2019
 
 **Main Requirements** : 
 
-Follow this code and fill missing place as requirements
-* Fill keyword **dynamic** & **var** at "..." place
-* List 20 random Avenger in List
+* Create file L7.dart into L7 folder
+* Copy under dart code [1 mark]
+* Fill missing places http://prntscr.com/nrot1q [6 marks]
+* Print class name of 20 random Avengers in **avengers** variable as http://prntscr.com/nrhrg7 [3 marks]
+* Note : *Run error 1 mark*
  ```dart
 import '../L6/CaptainAmerica.dart';
 import '../L6/Thanos.dart';
 import '../L6/Hulk.dart';
 import '../L6/Spiderman.dart';
 import 'dart:math';
+
 List<...> avengers = [<list to avengers here>];
 String checkAvenger(... avenger){
   // get class name of a avenger here such as Thanos, Spiderman, Hulk...
@@ -27,7 +28,7 @@ String checkAvenger(... avenger){
 }
 void main(){
   // list random avengers here
-  for(... i = 0; i<20; i++)
+  for()
     print('');
 }
 ```
