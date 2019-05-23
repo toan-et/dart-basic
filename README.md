@@ -19,17 +19,17 @@ import 'dart:math';
 
 List<...> avengers = [<list to avengers here>];
 String checkAvenger(... avenger){
-  // get class name of a avenger here such as Thanos, Spiderman, Hulk...
+  // get "class name" of a avenger here such as Thanos, Spiderman, Hulk...
   return '<a avenger>'
 }
 ... getAvenger(){
-  // get random avenger here
+  // get a random avenger from List here
   return '<a random avenger>'
 }
 void main(){
   // list random avengers here
-  for()
-    print('');
+  for(20)
+    print(checkAvenger(getAvenger()));
 }
 ```
 console screen :
