@@ -9,7 +9,7 @@ String checkAvenger(dynamic avenger){
 }
 dynamic getAvenger(){
   var random = new Random();
-  return avengers[random.nextInt(4)];
+  return avengers[random.nextInt(avengers.length)];
 }
 void main(){
   for(var i = 0; i<20; i++)
