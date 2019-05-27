@@ -6,7 +6,7 @@
 **Main Requirements** : 
 
  * **Dẫn đề** :
-   - Khi các Avengers bị thua Thanos, họ đi ngược thời gian cướp lại 6 viên đá, triển khai tuyệt chiêu búng tay thần thánh tiêu diệt Thanos thay đổi lịch sử. Họ nghiên cứu ra cái gọi là đường hầm lượng tử để quay về quá khứ. Triển khai code mô tả Avengers đi qua đường hầm lượng tử
+   - Trận Infinity War các Avengers thua Thanos, họ đánh cắp thời gian trở về lịch sử cướp lại 6 viên đá để thay đổi kết quả cuộc chiến. Các Avengers sử dụng đừờng hầm lượng tử để du hành thời gian. Triển khai code mô tả kịch bản này.
 
  * **Các đối tượng mô phỏng** : 
    - List<dynamic> Avengers = [...] : Danh sách các avenger
