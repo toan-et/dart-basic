@@ -3,22 +3,22 @@
 # Lesson 8 - Avngers Endgame: Time Thieves
 * Deadline: 6:00 PM Wednesday 29th May 2019
 
-**Main Requirements** : 
+**Đề bài** : 
 
- * **Dẫn đề** :
-   - Trận Infinity War các Avengers thua Thanos, họ quyết định chọn phương án đánh cắp thời gian trở về lịch sử cướp lại 6 viên đá để thay đổi kết quả cuộc chiến. Các Avengers sử dụng đừờng hầm lượng tử để du hành thời gian. Triển khai code mô tả kịch bản này.
+ * **Dẫn nhập** :
+   - Trận Infinity War các Avengers thua Thanos, họ quyết định chọn phương án đánh cắp thời gian trở về quá khứ cướp lại 6 viên đá để thay đổi kết quả cuộc chiến. Các Avengers sử dụng đừờng hầm lượng tử để du hành thời gian. Triển khai code mô tả kịch bản này.
 
  * **Các đối tượng mô phỏng** : 
    - List<dynamic> Avengers = [...] : Danh sách các avenger
    - StreamController : Bộ điều khiển đường hầm lượng tử
    - StreamSubscription : Bộ cảm biến đường hầm lượng tử: lắng nghe khi avenger đi vào
    - Stream : ống trượt đẩy Avenger qua bên kia đường hầm
- * **Yêu cầu** :  
+ * **Yêu cầu cơ bản** :  
    - Bộ cảm biến có nhiệm vụ lọc avenger, chỉ avenger có vũ khí mới cho qua, không có thì đá đít về (-> sử dụng StreamSubscription) **[2 marks]**
    - Cứ cách 2s là mỗi avenger sẽ được cho vào đường hầm lượng tử (-> sử dụng Stream) **[2 marks]**
    - Đường hầm sẽ đóng lại sau 8s, avenger nào nhảy vào không kịp thì phải ở lại (-> sử dụng StreamController) **[2 marks]**
    - Hiển thị danh sách avengers đã trượt qua đường hầm lượng tử trở về quá khứ. **[1 marks]**
- * **Mở rộng** : 
+ * **Yêu cầu nâng cao** : 
    - Thor chỉ có một, không có một nhân vật khác giả mạo(-> sử dụng Singleton, một class chỉ có duy nhất 1 new instance ) **[1.5 mark]**
    - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước khi nhảy vào đường hầm hệ thống sẽ check duy nhất Thor, khi nào vũ khí sẵn sàng mới được vào. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức tìm búa, và sẽ chờ khi búa được tìm thấy mới được nhảy vào đường hầm lượng tử (-> Sử dụng Future) **[1.5 mark]**
  ```dart
