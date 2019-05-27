@@ -1,5 +1,61 @@
 ﻿﻿# dart-basic
 
+# Lesson 8 - Avngers Endgame: Time Thieves
+* Deadline: 6:00 PM Wednesday 29th May 2019
+
+**Main Requirements** : 
+
+ * **Dẫn đề** :
+   - Khi các Avengers bị thua Thanos, họ đi ngược thời gian cướp lại 6 viên đá, triển khai tuyệt chiêu búng tay thần thánh tiêu diệt Thanos thay đổi lịch sử. Họ nghiên cứu ra cái gọi là đường hầm lượng tử để quay về quá khứ. Triển khai code mô tả Avengers đi qua đường hầm lượng tử
+
+ * **Các đối tượng mô phỏng** : 
+   - List<dynamic> Avengers = [...] : Danh sách các avenger
+   - StreamController : Bộ điều khiển đường hầm lượng tử
+   - StreamSubscription : Bộ cảm biến đường hầm lượng tử: lắng nghe khi avenger đi vào
+   - Stream : ống trượt đẩy Avenger qua bên kia đường hầm
+ * **Yêu cầu** :  
+   - Bộ cảm biến có nhiệm vụ lọc avenger, chỉ avenger có vũ khí mới cho qua, không có thì đá đít về (-> sử dụng StreamSubscription) **[2 marks]**
+   - Cứ cách 2s là mỗi avenger sẽ được cho vào đường hầm lượng tử (-> sử dụng Stream) **[2 marks]**
+   - Đường hầm sẽ đóng lại sau 8s, avenger nào nhảy vào không kịp thì phải ở lại (-> sử dụng StreamController) **[2 marks]**
+   - Hiển thị danh sách avengers đã trượt qua đường hầm lượng tử trở về quá khứ. **[1 marks]**
+ * **Mở rộng** : 
+   - Thor chỉ có một, không có một nhân vật khác giả mạo(-> sử dụng Singleton, một class chỉ có duy nhất 1 new instance ) **[1.5 mark]**
+   - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước khi nhảy vào đường hầm hệ thống sẽ check duy nhất Thor, khi nào vũ khí sẵn sàng mới được vào. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức tìm búa, và sẽ chờ khi búa được tìm thấy mới được nhảy vào đường hầm lượng tử (-> Sử dụng Future) **[1.5 mark]**
+ ```dart
+import 'dart:async';
+import '../L6/Avenger.dart';
+import '../L6/Spiderman.dart';
+import '../L6/CaptainAmerica.dart';
+import '../L6/Thanos.dart';
+import '../L6/Hulk.dart';
+import '../L6/Spiderman.dart';
+
+List<dynamic> transformAvengers(List<dynamic> avengers){
+  // Triển khai kịch bản tại đây 
+  // Dùng  StreamController, StreamSubscription, Stream ...
+  // start todo
+  // ...
+  // end todo
+  // trả về danh sách avengers đã trượt qua đường hầm lượng tử trở về quá khứ
+  List<dynamic> transformedAdvengers;
+  return transformedAdvengers;
+}
+
+// Liệt kê avengers đã qua đường hầm lượng tử
+// Inten class name
+void showAvengers(List<dynamic> transformedAvengers){
+
+}
+List<dynamic> avengers = [];
+void main() {
+  showAvengers(transformAvengers(avengers));
+}
+```
+console screen :
+ ```dart
+a list transformed avengers
+```
+
 # Lesson 7 - dynamic vs var keyword
 * Deadline: 6:00 PM Thursday 23th May 2019
 
