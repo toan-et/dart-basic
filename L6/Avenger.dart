@@ -6,9 +6,9 @@ abstract class Avenger {
   Avenger({String name = "Avenger", String sexual = "Unkown", Gadget gadget = null}) {
     this._name = name;
     this._sexual = sexual;
-    if(gadget == null) 
-      gadget = Gadget();
-    this._gadget = gadget;
+    // if(gadget == null) 
+    //   gadget = Gadget();
+    // this._gadget = gadget;
   }
   void showInfo() {
     print('Name: $_name');
