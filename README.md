@@ -1,6 +1,6 @@
 ﻿﻿# dart-basic
 
-# Lesson 8 - Avngers Endgame: Time Thieves
+# Lesson 8 - Avngers Endgame: Đánh cắp thời gian
 * Deadline: 6:00 PM Wednesday 29th May 2019
 
 **Đề bài** : 
@@ -11,12 +11,14 @@
  * **Các đối tượng mô phỏng** : 
    - List<dynamic> Avengers = [...] : Danh sách các avenger
    - StreamController : Bộ điều khiển đường hầm lượng tử
-   - StreamSubscription : Bộ cảm biến đường hầm lượng tử: lắng nghe khi avenger đi vào
-   - Stream : ống trượt đẩy Avenger qua bên kia đường hầm
+   - StreamSubscription : Bộ cảm biến đường hầm lượng tử đặt ở lối ra đường hầm lượng tử: new StreamController().stream.listen((data)) -> StreamSubscription
+   - Stream :
+      - StreamSink : new StreamController().sink - Lối vào để đưa Avenger vô đường hầm lượng tử [sink.add(avenger)]
+      - Stream : new StreamController().stream - Lối ra đường hầm lượng tử
  * **Yêu cầu cơ bản** :  
    - Bộ cảm biến có nhiệm vụ lọc avenger, chỉ avenger có vũ khí mới cho qua, không có thì đá đít về (-> sử dụng StreamSubscription) **[2 marks]**
-   - Cứ cách 2s là mỗi avenger sẽ được cho vào đường hầm lượng tử (-> sử dụng Stream) **[2 marks]**
-   - Đường hầm sẽ đóng lại sau 8s, avenger nào nhảy vào không kịp thì phải ở lại (-> sử dụng StreamController) **[2 marks]**
+   - Cứ cách 2s là mỗi avenger sẽ được cho vào đường hầm lượng tử (-> sử dụng StreamController.add) **[2 marks]**
+   - Đường hầm sẽ đóng lại sau 8s, avenger nào nhảy vào không kịp thì phải ở lại (-> sử dụng StreamController.close) **[2 marks]**
    - Hiển thị danh sách avengers đã trượt qua đường hầm lượng tử trở về quá khứ. **[1 marks]**
  * **Yêu cầu nâng cao** : 
    - Thor chỉ có một, không có một nhân vật khác giả mạo(-> sử dụng Singleton, một class chỉ có duy nhất 1 new instance ) **[1.5 mark]**
@@ -31,13 +33,12 @@ import '../L6/Hulk.dart';
 import '../L6/Spiderman.dart';
 
 List<dynamic> transformAvengers(List<dynamic> avengers){
+  List<dynamic> transformedAdvengers = [];
   // Triển khai kịch bản tại đây 
-  // Dùng  StreamController, StreamSubscription, Stream ...
+  // Dùng  StreamController, StreamSubscription...
   // start todo
   // ...
   // end todo
-  // trả về danh sách avengers đã trượt qua đường hầm lượng tử trở về quá khứ
-  List<dynamic> transformedAdvengers;
   return transformedAdvengers;
 }
 
