@@ -1,7 +1,8 @@
 ﻿﻿# dart-basic
 
 # Lesson 8 - Avengers Endgame: Đánh cắp thời gian
-* Deadline: 6:00 PM Wednesday 29th May 2019
+* **Knowledge** : *Stream, StreamController, StreamSubscription, Future, Asyn, Await*
+* **Deadline**: *6:00 PM Thursday 30th May 2019*
 
 **Đề bài** : 
 
