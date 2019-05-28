@@ -17,9 +17,13 @@
       - Stream : StreamController().stream - Lối ra đường hầm lượng tử
  * **Yêu cầu cơ bản** :  
    - Bộ cảm biến có nhiệm vụ lọc avenger, chỉ avenger có vũ khí mới cho qua. Hiển thị thông tin avengers được chấp nhận(Accepted) & không chấp nhận(Rejected) qua đường hầm lượng tử ở bộ cảm biến(-> sử dụng StreamSubscription) **[2 marks]**
-   - Cứ cách 2s là mỗi avenger sẽ được cho vào đường hầm lượng tử (-> sử dụng StreamController().sink.add) **[2 marks]**
-   - Đường hầm sẽ đóng lại sau 8s, avenger nào nhảy vào không kịp thì phải ở lại (-> sử dụng StreamController().close) **[2 marks]**
+   - Cứ cách 2s là mỗi avenger sẽ được cho vào đường hầm lượng tử (-> sử dụng StreamController().sink.add, Future, await, asyn) **[3 marks]**
+   - Đường hầm sẽ đóng lại sau 8s, avenger nào nhảy vào không kịp thì phải ở lại (-> sử dụng StreamController().close, Future) **[1 marks]**
    - Lưu lại một danh sách mới chứa các avenger được chấp nhận(transformedAvengers) và hiển thị lại. **[1 marks]**
+   - **Kết quả demo**
+      - http://prntscr.com/nuhun3 static picture
+      - https://i.imgur.com/hRw3U1C.gif  dynamic picture
+
  * **Yêu cầu nâng cao** : 
    - Thor chỉ có một, không có một nhân vật khác giả mạo(-> sử dụng Singleton, một class chỉ có duy nhất 1 new instance ) **[1.5 mark]**
    - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước lối ra đường hầm hệ thống sẽ check duy nhất Thor, khi nào vũ khí sẵn sàng mới cho qua. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức tìm búa, và sẽ chờ khi búa được tìm thấy bộ cảm biến mới chấp nhận(-> Sử dụng Future) **[1.5 mark]**
@@ -32,7 +36,7 @@ import '../L6/Thanos.dart';
 import '../L6/Hulk.dart';
 import '../L6/Spiderman.dart';
 
-List<dynamic> transformAvengers(List<dynamic> avengers){
+Future<List<dynamic>> transformAvengers(List<dynamic> avengers) async {
   List<dynamic> transformedAdvengers = [];
   // Triển khai kịch bản tại đây 
   // Dùng  StreamController, StreamSubscription...
@@ -46,9 +50,36 @@ List<dynamic> transformAvengers(List<dynamic> avengers){
 void showAvengers(List<dynamic> transformedAvengers){
 
 }
-List<dynamic> avengers = [];
+List<dynamic> avengers = [
+  Thanos(
+    name:'Củ khoai tím',
+    sexual:'Male',
+    gadget:Gadget('Găng tay vô cực 6 đá')
+  ),
+  Thor(
+    name:'Thần Sét',
+    sexual:'Male'
+  ),
+  CaptainAmerica(
+    name:'Lớp trưởng Mỹ',
+    sexual:'Male',
+    gadget:Gadget('Supper Khiên')
+  ),
+  Spiderman(
+    name:'Người Nhện',
+    sexual:'Male',
+    gadget:Gadget('Tơ Nhện')
+  ),
+  Hulk(
+    name:'Khổng Lồ Xanh',
+    sexual:'Male',
+    gadget:Gadget('Cú đấm')
+  ),
+];
 void main() {
-  showAvengers(transformAvengers(avengers));
+  transformAvengers(avengers).then((transformedAvengers) { 
+    showAvengers(transformedAvengers);
+  });
 }
 ```
 console screen :
