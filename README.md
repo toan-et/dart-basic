@@ -1,6 +1,6 @@
 ﻿﻿# dart-basic
 
-# Lesson 8 - Avngers Endgame: Đánh cắp thời gian
+# Lesson 8 - Avengers Endgame: Đánh cắp thời gian
 * Deadline: 6:00 PM Wednesday 29th May 2019
 
 **Đề bài** : 
@@ -11,18 +11,18 @@
  * **Các đối tượng mô phỏng** : 
    - List<dynamic> Avengers = [...] : Danh sách các avenger
    - StreamController : Bộ điều khiển đường hầm lượng tử
-   - StreamSubscription : Bộ cảm biến đường hầm lượng tử đặt ở lối ra đường hầm lượng tử: new StreamController().stream.listen((data)) -> StreamSubscription
+   - StreamSubscription : Bộ cảm biến đường hầm lượng tử đặt ở lối ra đường hầm: StreamController().stream.listen((data)) -> StreamSubscription
    - Stream :
-      - StreamSink : new StreamController().sink - Lối vào để đưa Avenger vô đường hầm lượng tử [sink.add(avenger)]
-      - Stream : new StreamController().stream - Lối ra đường hầm lượng tử
+      - StreamSink : StreamController().sink - Lối vào để đưa Avenger vô đường hầm lượng tử [sink.add(avenger)]
+      - Stream : StreamController().stream - Lối ra đường hầm lượng tử
  * **Yêu cầu cơ bản** :  
-   - Bộ cảm biến có nhiệm vụ lọc avenger, chỉ avenger có vũ khí mới cho qua, không có thì đá đít về (-> sử dụng StreamSubscription) **[2 marks]**
-   - Cứ cách 2s là mỗi avenger sẽ được cho vào đường hầm lượng tử (-> sử dụng StreamController.add) **[2 marks]**
-   - Đường hầm sẽ đóng lại sau 8s, avenger nào nhảy vào không kịp thì phải ở lại (-> sử dụng StreamController.close) **[2 marks]**
-   - Hiển thị danh sách avengers đã trượt qua đường hầm lượng tử trở về quá khứ. **[1 marks]**
+   - Bộ cảm biến có nhiệm vụ lọc avenger, chỉ avenger có vũ khí mới cho qua. Hiển thị thông tin avengers được chấp nhận(Accepted) & không chấp nhận(Rejected) qua đường hầm lượng tử ở bộ cảm biến(-> sử dụng StreamSubscription) **[2 marks]**
+   - Cứ cách 2s là mỗi avenger sẽ được cho vào đường hầm lượng tử (-> sử dụng StreamController().sink.add) **[2 marks]**
+   - Đường hầm sẽ đóng lại sau 8s, avenger nào nhảy vào không kịp thì phải ở lại (-> sử dụng StreamController().close) **[2 marks]**
+   - Lưu lại một danh sách mới chứa các avenger được chấp nhận(transformedAvengers) và hiển thị lại. **[1 marks]**
  * **Yêu cầu nâng cao** : 
    - Thor chỉ có một, không có một nhân vật khác giả mạo(-> sử dụng Singleton, một class chỉ có duy nhất 1 new instance ) **[1.5 mark]**
-   - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước khi nhảy vào đường hầm hệ thống sẽ check duy nhất Thor, khi nào vũ khí sẵn sàng mới được vào. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức tìm búa, và sẽ chờ khi búa được tìm thấy mới được nhảy vào đường hầm lượng tử (-> Sử dụng Future) **[1.5 mark]**
+   - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước lối ra đường hầm hệ thống sẽ check duy nhất Thor, khi nào vũ khí sẵn sàng mới cho qua. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức tìm búa, và sẽ chờ khi búa được tìm thấy bộ cảm biến mới chấp nhận(-> Sử dụng Future) **[1.5 mark]**
  ```dart
 import 'dart:async';
 import '../L6/Avenger.dart';
