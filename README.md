@@ -84,10 +84,9 @@ void main() {
   });
 }
 ```
-console screen :
- ```dart
-a list transformed avengers
-```
+* **Result screen** :
+  - http://prntscr.com/nup9nh static picture
+  - https://i.imgur.com/tWw37xk.gif  dynamic picture
 
 # Lesson 7 - dynamic vs var keyword
 * Deadline: 6:00 PM Thursday 23th May 2019
