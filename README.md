@@ -1,17 +1,21 @@
-﻿﻿# dart-basic
+﻿﻿﻿﻿# dart-basic
 
 # Lesson 9 - Avengers Endgame: Chống giả mạo
 * **Knowledge** : *Singleton(desgin pattern), Factory Constructor*
-* **Deadline**: *6:00 PM Monday 3th  2019*
+* **Deadline**: *6:00 PM Monday 3th Jun 2019*
 
 * **Đề bài** 
-    ( *Yêu cầu nâng cao L8*)
-   - Thor chỉ có một, không có một nhân vật khác giả mạo(-> sử dụng Singleton, một class chỉ có duy nhất 1 new instance ) **[5 mark]**
-   - Viết hàm kiểm tra 2 new instance của Thor để đảm bảo không bị giả mạo (Sử dụng operator)
+    (*Yêu cầu nâng cao L8*)
+   - Thor chỉ có một, không có một nhân vật khác giả mạo(-> sử dụng Singleton, một class chỉ có duy nhất 1 new instance ) **[5 marks]**
+   - Viết hàm kiểm tra 2 new instance của Thor để đảm bảo không bị giả mạo (Sử dụng operator ==) **[2 marks]**
    ```dart
-
+    Thor thor = Thor(name: 'Thần Sét', sexual: 'Male');
+    Thor thorFake = Thor(name: 'Thần Sét Fakebede', sexual: 'Female');
+    thor.showInfo();
+    thorFake.showInfo();
+    print("Thor can't be fake: ${thor == thorFake}");
    ```
-   - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước lối ra đường hầm hệ thống sẽ check duy nhất Thor, khi nào vũ khí sẵn sàng mới cho qua. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức tìm búa, và sẽ chờ khi búa được tìm thấy bộ cảm biến mới chấp nhận(-> Sử dụng Future, async, await) **[5 mark]**
+   - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước lối ra đường hầm hệ thống sẽ check duy nhất Thor, khi nào vũ khí sẵn sàng mới cho qua. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức tìm búa, và sẽ chờ khi búa được tìm thấy bộ cảm biến mới chấp nhận(-> Sử dụng Future, async, await) **[3 marks]**
 
 # Lesson 8 - Avengers Endgame: Đánh cắp thời gian
 * **Knowledge** : *Stream, StreamController, StreamSubscription, Future, async, await*
