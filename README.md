@@ -1,5 +1,18 @@
 ﻿﻿# dart-basic
 
+# Lesson 9 - Avengers Endgame: Chống giả mạo
+* **Knowledge** : *Singleton(desgin pattern), Factory Constructor*
+* **Deadline**: *6:00 PM Monday 3th  2019*
+
+* **Đề bài** 
+    ( *Yêu cầu nâng cao L8*)
+   - Thor chỉ có một, không có một nhân vật khác giả mạo(-> sử dụng Singleton, một class chỉ có duy nhất 1 new instance ) **[5 mark]**
+   - Viết hàm kiểm tra 2 new instance của Thor để đảm bảo không bị giả mạo (Sử dụng operator)
+   ```dart
+
+   ```
+   - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước lối ra đường hầm hệ thống sẽ check duy nhất Thor, khi nào vũ khí sẵn sàng mới cho qua. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức tìm búa, và sẽ chờ khi búa được tìm thấy bộ cảm biến mới chấp nhận(-> Sử dụng Future, async, await) **[5 mark]**
+
 # Lesson 8 - Avengers Endgame: Đánh cắp thời gian
 * **Knowledge** : *Stream, StreamController, StreamSubscription, Future, async, await*
 * **Deadline**: *6:00 PM Thursday 30th May 2019*
@@ -19,15 +32,11 @@
  * **Yêu cầu cơ bản** :  
    - Bộ cảm biến có nhiệm vụ lọc avenger, chỉ avenger có vũ khí mới cho qua. Hiển thị thông tin avengers được chấp nhận(Accepted) & không chấp nhận(Rejected) qua đường hầm lượng tử ở bộ cảm biến(-> sử dụng StreamSubscription) **[2 marks]**
    - Cứ cách 1s là mỗi avenger sẽ được cho vào đường hầm lượng tử (-> sử dụng StreamController().sink.add, Future, await, asyn) **[3 marks]**
-   - Đường hầm sẽ đóng lại sau 4s, avenger nào nhảy vào không kịp thì phải ở lại (-> sử dụng StreamController().close, Future) **[1 marks]**
-   - Lưu lại một danh sách mới chứa các avenger được chấp nhận(transformedAvengers) và hiển thị lại. **[1 marks]**
+   - Đường hầm sẽ đóng lại sau 4s, avenger nào nhảy vào không kịp thì phải ở lại (-> sử dụng StreamController().close, Future) **[2 marks]**
+   - Lưu lại một danh sách mới chứa các avenger được chấp nhận(transformedAvengers) và hiển thị lại. **[3 marks]**
    - **Kết quả demo**
       - http://prntscr.com/nup9nh static picture
       - https://i.imgur.com/tWw37xk.gif  dynamic picture
-
- * **Yêu cầu nâng cao** : 
-   - Thor chỉ có một, không có một nhân vật khác giả mạo(-> sử dụng Singleton, một class chỉ có duy nhất 1 new instance ) **[1.5 mark]**
-   - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước lối ra đường hầm hệ thống sẽ check duy nhất Thor, khi nào vũ khí sẵn sàng mới cho qua. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức tìm búa, và sẽ chờ khi búa được tìm thấy bộ cảm biến mới chấp nhận(-> Sử dụng Future, async, await) **[1.5 mark]**
  ```dart
 import 'dart:async';
 import '../L6/Avenger.dart';
