@@ -16,6 +16,7 @@ abstract class Avenger {
     if(_gadget != null)
       print('Bảo bối: ${_gadget.getName()}');
   }
+  String get name => _name;
   bool hasGadget() => _gadget == null ? false: true;
   void doSkill();
 }
