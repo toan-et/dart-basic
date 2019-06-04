@@ -16,7 +16,7 @@
         print("Thor can't be fake: ${thor == thorFake}");
       ```
       - Screen ressult : http://prntscr.com/nxbobg
-   - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước lối ra đường hầm hệ thống sẽ check vũ khí chỉ avenger có type là Thor. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức *fetchMjolnir()*( khởi tạo Gadget, tham số name lấy từ URL). Yêu cầu : dùng http fetch tên búa qua URL : https://blogspotscraping.herokuapp.com/mjolnir.json( -> Sử dụng Future, async, await, http) **[3 marks]**
+   - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước lối ra đường hầm hệ thống sẽ check vũ khí chỉ avenger có type là Thor. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức *fetchMjolnir()*( khởi tạo Gadget, tham số name lấy từ URL). Yêu cầu : dùng http fetch tên búa qua URL : https://blogspotscraping.herokuapp.com/mjolnir.json (-> Sử dụng Future, async, await, http) **[3 marks]**
 
 # Lesson 8 - Avengers Endgame: Đánh cắp thời gian
 * **Knowledge** : *Stream, StreamController, StreamSubscription, Future, async, await*
