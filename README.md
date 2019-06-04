@@ -7,7 +7,7 @@
 * **Đề bài** 
     (*Yêu cầu nâng cao L8*)
    - Thor chỉ có một, không có một nhân vật khác giả mạo(-> sử dụng Singleton, một class chỉ có duy nhất 1 new instance ) **[5 marks]**
-   - Viết hàm kiểm tra 2 new instance của Thor để đảm bảo không bị giả mạo (Sử dụng operator ==) **[2 marks]**
+   - Viết hàm kiểm tra 2 new instance của Thor để đảm bảo không bị giả mạo (Sử dụng operator ==) **[1 marks]**
       ```dart
         Thor thor = Thor(name: 'Thần Sét', sexual: 'Male');
         Thor thorFake = Thor(name: 'Thần Sét Fakebede', sexual: 'Female');
@@ -17,7 +17,7 @@
       ```
       - Screen ressult : http://prntscr.com/nxbobg
    - Thor lúc này bụng phệ, não teo vì rượu hay đãng trí, thường xuyên quên cây búa thần Mjolnir, trước lối ra đường hầm hệ thống sẽ check vũ khí chỉ avenger có type là Thor. Nên muốn qua đường hầm lượng tử Thor phải triển khai phương thức *fetchMjolnir()*( khởi tạo Gadget, tham số name lấy từ URL). Yêu cầu : dùng http fetch tên búa qua URL : https://blogspotscraping.herokuapp.com/mjolnir.json (-> Sử dụng Future, async, await, http) **[3 marks]**
-
+   - Code đẹp, tách hàm, đặt tên biến ... [1 mark]
 # Lesson 8 - Avengers Endgame: Đánh cắp thời gian
 * **Knowledge** : *Stream, StreamController, StreamSubscription, Future, async, await*
 * **Deadline**: *6:00 PM Thursday 4th Jun 2019*
