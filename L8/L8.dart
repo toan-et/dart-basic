@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:ansicolor/ansicolor.dart';
-// import "../lib/console.dart";
 import '../L6/Avenger.dart';
 import '../L6/Gadget.dart';
 import '../L6/Spiderman.dart';
@@ -61,10 +60,6 @@ Future<List<dynamic>> transformAvengers(List<dynamic> avengers) async {
       print("${redText('✖')} Rejected: " +
           avenger.runtimeType.toString() +
           " -> without gadget");
-
-    // Add 5 seconds delay
-    // It will call onPause function passed on StreamController constructor
-    //streamSubscription.pause(Future.delayed(const Duration(seconds: 20)));
   }, onDone: () {
     print("[StreamSubscription.onDone()] ---> " +
         greenText('Transforming Avengers done'));
@@ -78,7 +73,6 @@ Future<List<dynamic>> transformAvengers(List<dynamic> avengers) async {
   return transformedAvengers;
 }
 
-// Liệt kê avengers đã qua đường hầm lượng tử
 void showAvengers(List<dynamic> transformedAvengers) {
   print('\r\n<========[Final Transformed Avengers]========>');
   transformedAvengers.forEach((avenger) {
