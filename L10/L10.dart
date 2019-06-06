@@ -4,7 +4,7 @@ import 'CaptainAmerica.dart';
 import 'Thor.dart';
 void main(){
   
-  Thor thorFactoryMade = Avenger(type: Avengers.Thor, name:'Thor Factory', sexual: 'Male');
+  Thor thorFactoryMade = Avenger(type: Avengers.Thor, name:'Thor Factorymade', sexual: 'Male');
   Thor thorHomeMade = Thor(name:'Thor Homemade', sexual: 'Male');
   thorFactoryMade.showInfo();
   thorHomeMade.showInfo();
