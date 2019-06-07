@@ -1,4 +1,24 @@
 ﻿﻿﻿﻿# dart-basic
+# Lesson 10 - Avengers Endgame: Avenger Factory & Captian America fetch Thor's Mjolnir hammer
+* **Knowledge** : *Factory Constructor, Polymorphism(implement, extend)*
+* **Deadline**: *5:00 PM Wednesday 12th Jun 2019*
+
+* **Đề bài** 
+   - Tạo abtract class Avenger có 2 thuộc tính public name & sexaul, hàm showInfo(), có factory constructor **[3 marks]**
+   - Tạo 2 class CaptainAmerica & Thor kế thừa từ abtract class Avenger sao cho có 2 cách khởi tạo như code bên dưới **[3 marks]**
+      ```dart
+       Thor thorFactoryMade = Avenger(type: Avengers.Thor, name:'Thor Factorymade', sexual: 'Male');
+       Thor thorHomeMade = Thor(name:'Thor Homemade', sexual: 'Male');
+       thorFactoryMade.showInfo();
+       thorHomeMade.showInfo();
+      ```
+   - Trong tập cuối Captain America có khả năng gọi búa Mjolnir của Thor. Hãy mô tả tính chất đó bằng thuộc tính từ khóa implement  **[2 marks]**
+   ```dart
+    CaptainAmerica ca = Avenger(type: Avengers.CaptainAmerica, name: Avengers.CaptainAmerica, sexual: 'Male');
+    ca.showInfo();
+    ca.fetchMjolnir();
+    ```
+   - Code đẹp, tách hàm, đặt tên biến, tổ chức code, class ... **[2 marks]**
 
 # Lesson 9 - Avengers Endgame: Chống giả mạo
 * **Knowledge** : *Singleton(desgin pattern), Factory Constructor, Http*
