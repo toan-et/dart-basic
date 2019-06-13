@@ -5,10 +5,10 @@
 * **Deadline**: *6:00 PM Monday 17th Jun 2019*
 * **Fored Requirements**:
   - Get latest code from master branch
-  - Alway create a feature with format :feature/L<number>-<name>
-  - Pull request title is "L<number> done
+  - Alway create a feature with format :feature/L[<number>]-[<name>]
+  - Pull request title is "L[<number>] done
   - Pull request body is : link screenshot your result
-  - **void main** in L<number>.dart
+  - **void main** in L[<number>].dart
 * **Đề bài** 
    - Tạo hàm fetAvenger(url) có cách sử dụng như sau **[1 mark]** : 
      ```dart
