@@ -1,7 +1,7 @@
 ﻿﻿﻿﻿# dart-basic
 
 # Lesson 11
-* **Knowledge** : *Factory Constructor, Ansyc Await, Dynamic*
+* **Knowledge** : *Factory Constructor, Future ansyc await, Dynamic, Future then*
 * **Deadline**: *6:00 PM Monday 17th Jun 2019*
 * **Fored Requirements**:
   - Get latest code from **master** branch
@@ -31,12 +31,19 @@
               print(e);
             }
         ```
-   - Tạo **named factory constructor** có tên và chỉ một tham số: fromURL(String url), name, sexual lấy từ nội dung url, type là tên file json. Cách sử dụng như sau: **[4 marks]**
+   - Tạo **named factory constructor** có tên và chỉ một tham số: fromURL(String url)
+     - **name**, **sexual** lấy từ nội dung url, 
+     - **type** là tên file json của url. ví dụ url https://blogspotscraping.herokuapp.com/avengers/Thor.json -> type là 'Thor'
+     - Viết hàm lấy type có cách sử dụng như sau 
+     ```dart
+      String type = Avengers.getFileNameFromUrl(url)
+     ```
+     - Gọi hàm showInfo trong hàm khởi tạo
+     Cách sử dụng như sau: **[4 marks]**
      ```dart
       Thor thor = Avenger.fromURL(urlThor);
-      thor.showInfo()
      ```
-   - Tạo hàm cho phép tạo hàng loạt aveneger *createAvengers()* thứ tự lần lượt là Thor, Thanos, Captain America (show info ra console log đúng thứ tự) từ danh sách URL bên dưới(chú ý, không được đổi thứ tự url). Bắt buộc sử dụng lại hàm named factory constructor .fromURL() **[4 marks]**
+   - Tạo hàm cho phép tạo hàng loạt aveneger *createAvengers()* thứ tự lần lượt là Thor, Thanos, Captain America (show info ra console log đúng thứ tự) từ danh sách URL bên dưới(chú ý, không được đổi thứ tự url). Bắt buộc sử dụng lại hàm default factory constructor(L10) bên trong ***createAvengers()*** **[4 marks]**
       ```dart
        // don't change position of url in list
        const List<String> urlAvengers = [
