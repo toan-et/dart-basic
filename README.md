@@ -2,7 +2,7 @@
 
 # Lesson 11
 * **Knowledge** : *Factory Constructor, Ansyc Await, Dynamic*
-* **Deadline**: *6:00 PM Friday 14th Jun 2019*
+* **Deadline**: *6:00 PM Monday 17th Jun 2019*
 * **Fored Requirements**:
   - Get latest code from master branch
   - Alway create a feature with format :feature/L<number>-<name>
@@ -36,7 +36,7 @@
       Thor thor = Avenger.fromURL(urlThor);
       thor.showInfo()
      ```
-   - Tạo hàm tạo hàng loạt aveneger thứ tự lần lượt là Thor Thanos Captain America (show info ra console log đúng thứ tự) từ dang sách URL bên dưới(không được đổi thứ tự). Bắt buộc sử dụng lại hàm named factory constructor .fromURL() **[4 marks]**
+   - Tạo hàm tạo hàng loạt aveneger *createAvengers()* thứ tự lần lượt là Thor Thanos Captain America (show info ra console log đúng thứ tự) từ dang sách URL bên dưới(không được đổi thứ tự). Bắt buộc sử dụng lại hàm named factory constructor .fromURL() **[4 marks]**
       ```dart
        // don't change position of url in list
        const List<String> urlAvengers = [
@@ -44,15 +44,6 @@
           'https://blogspotscraping.herokuapp.com/avengers/Thanos.json',
           'https://blogspotscraping.herokuapp.com/avengers/CaptainAmerica.json',
         ];
-
-        void createAvengers() {
-          // todo
-        }
-
-        void main(){
-          // L11.1 
-
-        }
       ```
    - Code đẹp ... **[2 marks]**
 
