@@ -31,7 +31,7 @@
               print(e);
             }
         ```
-   - Tạo **named factory constructor** có tên và chỉ một tham số: fromURL(String url), type, name, sexual lấy từ url. Cách sử dụng như sau: **[4 marks]**
+   - Tạo **named factory constructor** có tên và chỉ một tham số: fromURL(String url), name, sexual lấy từ nội dung url, type là tên file json. Cách sử dụng như sau: **[4 marks]**
      ```dart
       Thor thor = Avenger.fromURL(urlThor);
       thor.showInfo()
