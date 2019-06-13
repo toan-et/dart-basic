@@ -27,7 +27,7 @@ Future delay(int seconds) {
       Duration(seconds: seconds), () => print('⌚  ${seconds.toString()}s'));
 }
 
-void addAvengers(StreamController streamCtrl, List<dynamic> avengers) async {
+Future<void> addAvengers(StreamController streamCtrl, List<dynamic> avengers) async {
   for (final avenger in avengers) {
     try {
       print('${yellowText('>>>')} Pushed ' + avenger.runtimeType.toString());
