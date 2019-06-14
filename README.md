@@ -9,6 +9,12 @@
   - Pull request title is **L11 done**
   - Pull request body is link screenshot your result
   - **void main** in L11.dart
+    ```dart
+    print('============ L11.2 - Call Default Factory Constructor Orderly ============');
+    // todo
+    print('============ L11.1 - Named factory constructor ============');
+    // todo
+    ```
 * **Đề bài** 
    - Tạo hàm fetAvenger(url) có cách sử dụng như sau: 
      ```dart
@@ -53,6 +59,8 @@
         ];
       ```
    - Code đẹp ... **[2 marks]**
+* **Kết quả** 
+  https://prnt.sc/o1n3wb
 
 # Lesson 10 - Avengers Endgame: Avenger Factory & Captian America fetch Thor's Mjolnir hammer
 * **Knowledge** : *Factory Constructor, Polymorphism(implement, extend)*
