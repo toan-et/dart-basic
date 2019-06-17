@@ -9,22 +9,6 @@
   - Alway create a feature with format : **feature/L11-name-member**
   - Pull request title is **L11 done**
   - Pull request body is link screenshot your result
-  - **void main** in L11.dart
-    ```dart
-    const List<String> urlAvengers = [
-      'https://blogspotscraping.herokuapp.com/avengers/Thor.json',
-      'https://blogspotscraping.herokuapp.com/avengers/Thanos.json',
-      'https://blogspotscraping.herokuapp.com/avengers/CaptainAmerica.json',
-    ];
-    //funtion createAvengers(){
-      // todo
-      // forced call default factory constructor
-    //}
-    print('============ L11.2 - Call Default Factory Constructor Orderly ============');
-    // todo
-    print('============ L11.1 - Call Named Factory constructor create any avenger ============');
-    // todo
-    ```
 * **Đề bài** 
    - Tạo hàm fetAvenger(url) có cách sử dụng như sau: 
      ```dart
