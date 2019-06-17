@@ -1,24 +1,35 @@
 ﻿﻿﻿﻿# dart-basic
 
 # Lesson 11
-* **Knowledge** : *Factory Constructor, Future ansyc await, Dynamic, Future then*
-* **Deadline**: *6:00 PM Monday 17th Jun 2019*
+* **Knowledge** : *Factory Constructor(named & default), Future ansyc await, Future then, dynamic*
+* **Deadline**: *6:00 PM Wednesday 19th Jun 2019*
 * **Fored Requirements**:
   - Get latest code from **master** branch
+  - Code in L11 folder
   - Alway create a feature with format : **feature/L11-name-member**
   - Pull request title is **L11 done**
   - Pull request body is link screenshot your result
   - **void main** in L11.dart
     ```dart
+    const List<String> urlAvengers = [
+      'https://blogspotscraping.herokuapp.com/avengers/Thor.json',
+      'https://blogspotscraping.herokuapp.com/avengers/Thanos.json',
+      'https://blogspotscraping.herokuapp.com/avengers/CaptainAmerica.json',
+    ];
+    //funtion createAvengers(){
+      // todo
+      // forced call default factory constructor
+    //}
     print('============ L11.2 - Call Default Factory Constructor Orderly ============');
     // todo
-    print('============ L11.1 - Named factory constructor ============');
+    print('============ L11.1 - Call Named Factory constructor create any avenger ============');
     // todo
     ```
 * **Đề bài** 
    - Tạo hàm fetAvenger(url) có cách sử dụng như sau: 
      ```dart
-       Avengers.fetchAvenger(url)
+      // In Avenger.dart
+      Avengers.fetchAvenger(url)
      ```
      Hàm mẫu fetAvenger lấy thông tin từ json url
       ```dart
@@ -37,28 +48,33 @@
               print(e);
             }
         ```
-   - Tạo **named factory constructor** có tên và chỉ một tham số: fromURL(String url)
+   - Tạo ***named factory constructor*** có tính chất như ***default factory constructor*** nhưng chỉ có một tham số ***fromURL(String url)***.  **[3 marks]**
+     Gợi ý thêm :
      - **name**, **sexual** lấy từ nội dung url, 
      - **type** là tên file json của url. ví dụ url https://blogspotscraping.herokuapp.com/avengers/Thor.json -> type là 'Thor'
-     - Viết hàm lấy type có cách sử dụng như sau 
+     - Viết hàm lấy type có cách sử dụng như sau : bắt buộc dùng thuật toán cắt chuỗi.
      ```dart
       String type = Avengers.getFileNameFromUrl(url)
      ```
-     - Gọi hàm showInfo trong hàm khởi tạo
-     Cách sử dụng như sau: **[4 marks]**
+     - Cách sử dụng như sau: 
+        - Gọi hàm showInfo trong hàm khởi tạo
+        - Phải dùng hàm ***etchAvenger(url)*** bên trong hàm này
      ```dart
       Thor thor = Avenger.fromURL(urlThor);
      ```
-   - Tạo hàm cho phép tạo hàng loạt aveneger *createAvengers()* thứ tự lần lượt là Thor, Thanos, Captain America (show info ra console log đúng thứ tự) từ danh sách URL bên dưới(chú ý, không được đổi thứ tự url). Bắt buộc sử dụng lại hàm default factory constructor(L10) bên trong ***createAvengers()*** **[4 marks]**
+   - Trong file L11.dart, tạo hàm có tên là *createAvengers()* cho phép tạo hàng loạt aveneger show ra info từng avenger đúng thứ tự danh sách URL bên dưới( Thor -> Thanos -> Captain America). **[4 marks]**
+      - Bắt buộc sử dụng lại hàm **default factory constructor** bên trong ***createAvengers()*** 
+      - Bắt buộc sử dụng vòng lặp for
       ```dart
        // don't change position of url in list
+       // In L11.dart
        const List<String> urlAvengers = [
           'https://blogspotscraping.herokuapp.com/avengers/Thor.json',
           'https://blogspotscraping.herokuapp.com/avengers/Thanos.json',
           'https://blogspotscraping.herokuapp.com/avengers/CaptainAmerica.json',
         ];
       ```
-   - Code đẹp ... **[2 marks]**
+   - Code đẹp ... **[3 marks]**
 * **Kết quả** 
   https://prnt.sc/o1n3wb
 
