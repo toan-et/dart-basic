@@ -39,26 +39,21 @@ abstract class Avenger {
     String type = Avengers.getFileNameFromUrl(url);
     dynamic avenger;
     Avengers.fetchAvenger(url).then((response) {
+      dynamic avengerName = response["Avenger"]["name"];
+      dynamic avengersexual = response["Avenger"]["sexual"];
       switch (type) {
         case "Thanos":
-          avenger = Thanos(
-              name: response["Avenger"]["name"],
-              sexual: response["Avenger"]["sexual"]);
+          avenger = Thanos(name: avengerName, sexual: avengersexual);
           break;
         case "Thor":
-          avenger = Thor(
-              name: response["Avenger"]["name"],
-              sexual: response["Avenger"]["sexual"]);
+          avenger = Thor(name: avengerName, sexual: avengersexual);
           break;
         case "CaptainAmerica":
-          avenger = CaptainAmerica(
-              name: response["Avenger"]["name"],
-              sexual: response["Avenger"]["sexual"]);
+          avenger = CaptainAmerica(name: avengerName, sexual: avengersexual);
           break;
       }
-
-      _name = response["Avenger"]["name"].toString();
-      _sexual = response["Avenger"]["sexual"].toString();
+      _name = avengerName;
+      _sexual = avengersexual;
       showInfo();
       return avenger;
     });
