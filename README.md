@@ -1,4 +1,37 @@
 ﻿﻿﻿﻿# dart-basic
+# Lesson 12
+* **Knowledge** : *Recursive, Array, algorithm sort & find*
+* **Deadline**: *6:00 PM Tuesday 24th Jun 2019*
+* **Đề bài** 
+  - Mô thả kịch bản tổng đài [3 marks]
+     ```
+     - Nhấn phím 1 : nghe tiếng việt (in ra màn hình)
+     - Nhấn phím 2 : gặp tổng viên (in ra màn hình chữ này)
+     - Nhấn phím 3 : để nghe lại (hiện lại menu )
+    ```
+    - Làm tất cả trong một hàm [1 marks]
+    - Sau đó tách ra 3 hàm [2 marks]
+      - Hàm thủ tục nhập số, 
+      - Hàm in ra menu như trên
+      - Hàm nhận giá trị nhập in ra màn hình nội dung lệnh nhập.
+
+  - Hãy khai báo một mảng với 5 chữ số tự nhiên bất kỳ(không thứ tự) [0.5 mark]
+  - Hãy khai báo một ma trận gồm 5 mảng trên (bắt buộc sử dụng Map & List) [0.5 mark]
+    ```
+    List matrixList = ...
+    Map matrixMap = ...
+    ```
+  - Viết thuận toán sắp sếp mảng 5 chữ số
+    - Hàm có 2 tham số **array** đầu vào & **sortType** 'desc'(giảm dần), 'asc'(tăng dần), giá trị trả về là 1 mảng mới đã sắp xếp [1 marks]
+  - Viết hàm tìm kiếm phần tử bất kỳ trong mảng ( có 2 tham số, và trả về phần tử tìm được)
+  - Viết hàm tìm kiếm nhị phân phần tử bất kỳ trong mảng (có 2 tham số, và trả về phần tử tìm được)
+
+# Lesson 11 (again)
+* **Knowledge** : *Default Factory Constructor, Future then, Recursive*
+* **Deadline**: *6:00 PM Friday 21th Jun 2019*
+* **Đề bài** 
+  - **L11 advanced**: createAvengers() function without async await, but fetching data is orderly [5 marks]
+  - **L11 clean code** : make your code cleaner [5 marks]
 
 # Lesson 11
 * **Knowledge** : *Factory Constructor(named & default), Future ansyc await, Future then, dynamic*
@@ -9,7 +42,11 @@
   - Alway create a feature with format : **feature/L11-name-member**
   - Pull request title is **L11 done**
   - Pull request body is link screenshot your result
-* **Đề bài** 
+
+* **Đề bài**   
+    Knowledge : Default Factory Constructor, Future then, Recursive
+    Deadline: 5h:30 PM Friday 21th Jun 2019
+* **Đề bài cơ bản** 
    - Tạo hàm fetAvenger(url) có cách sử dụng như sau: 
      ```dart
       // In Avenger.dart
