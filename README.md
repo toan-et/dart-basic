@@ -2,13 +2,14 @@
 
 # Lesson 11
 * **Knowledge** : *Factory Constructor(named & default), Future ansyc await, Future then, dynamic*
-* **Deadline**: *6:00 PM Wednesday 19th Jun 2019*
+* **Deadline**: *6:00 PM Thursday 27th Jun 2019*
 * **Fored Requirements**:
   - Get latest code from **master** branch
-  - Code in L11 folder
-  - Alway create a feature with format : **feature/L11-name-member**
-  - Pull request title is **L11 done**
+  - Code in L12 folder
+  - Alway create a feature with format : **feature/L12-name-member**
+  - Pull request title is **L12 Finish**
   - Pull request body is link screenshot your result
+  - All code only in L12.dart
 * **Đề bài** 
    - Tạo hàm fetAvenger(url) có cách sử dụng như sau: 
      ```dart
