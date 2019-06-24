@@ -12,8 +12,8 @@
      - Nhấn phím 3 : để nghe lại
     ```
     - Làm tất cả trong một hàm [1 marks]
-    - Sau đó tách ra 3 hàm [2 marks]
-      - Hàm thủ tục nhập số, 
+    - Sau đó tách  3 hàm [2 marks]
+      - Hàm thủ tục nhập số
       - Hàm thủ tục in ra menu như trên
       - Hàm nhận giá trị số nhập vào và trả về một chuỗi có ý nghĩa tương ứng với mô tả trên.
   - Khai báo & sử dụng array, json [2 marks]
@@ -22,13 +22,13 @@
         // Kết quả màn hình giống nhau nhưng cách dùng khác nhau
         a[0] = 1
         a[0] = 1
-        ```
+      ```
       - Hãy khai báo một ma trận gồm 5 mảng trên (bắt buộc sử dụng 2 cách Map & List). In ra màn hình giá trị bất kì. Sử dụng 2 cách, dùng biến $ và nối chuỗi thông thường
         ```
-        List matrixList = ...
-        Map matrixMap = ...
+          List matrixList = ...
+          Map matrixMap = ...
         ```
-      - Hãy khai báo một biến Map chứa json (bắt buộc để chính xác kiểu dữ liệu). In ra màn hình 1 giá trị bất kì, Sử dụng 2 cách, dùng biến $ và nối chuỗi thông thường
+      - Hãy khai báo một biến Map chứa json,bắt buộc để chính xác kiểu dữ liệu. In ra màn hình 1 giá trị bất kì. Sử dụng 2 cách, dùng biến $ và nối chuỗi thông thường
   
   - Viết thuật toán sắp sếp mảng 5 chữ số
     - Hàm có 2 tham số **array** đầu vào & **sortType** 'desc'(giảm dần), 'asc'(tăng dần), giá trị trả về là 1 mảng mới đã sắp xếp [1 mark]
