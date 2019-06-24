@@ -1,8 +1,14 @@
 ﻿﻿﻿﻿# dart-basic
 # Lesson 12
 * **Knowledge** : *Recursive, List, Map, sort & find algorithm*
-* **Deadline**: *6:00 PM Tuesday 24th Jun 2019*
-* **Requirement**:
+* **Deadline**: *6:00 PM Thursday 27th Jun 2019*
+* **Fored Requirements**:
+  - Get latest code from **master** branch
+  - Code in L12 folder
+  - Always create a feature with format : **feature/L12-name-member**
+  - Pull request title is **L12 Finish**
+  - Pull request body is link screenshot your result
+  - All code only in L12.dart
 
 * **Đề bài** 
   - Mô tả kịch bản tổng đài [3 marks]
